@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bản đồ</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="css/map.css" />
+  </head>
+  <body>
+    <header>
+      <!-- b4-navbar-default -->
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="map.html">MAP</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="content">
+        <div class="container-fluid text-center">
+          <h1>VUI LÒNG CHỌN ĐỊA ĐIỂM</h1>
+        </div>
+        <button data="both" class="btn btn-primary active">Cả hai</button>
+        <br />
+        <button data="nhuacu" class="btn btn-primary">Chai nhựa cũ</button>
+        <br />
+        <button data="pincu" class="btn btn-primary">Pin cũ</button>
+      </div>
+      <div class="bando">
+        <div id="map"></div>
+        <script src="js/script.js"></script>
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-u6BlmLpRaEqWvnk4R1O9MQVgOgAk8nA&callback=initMap"
+          async
+          defer
+        ></script>
+      </div>
+    </main>
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/popper.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
