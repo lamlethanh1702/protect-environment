@@ -99,7 +99,7 @@ main .active {
 .bando #map {
     margin-top: 5px;
     width: 100%;
-    height: 385px;
+    height: 530px;
 }
 
 @media (max-width:768px) {
